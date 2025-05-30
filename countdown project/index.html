@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>العد التنازلي</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1 class="title">العد التنازلي</h1>
+
+  <div class="circle-timer">
+    <svg width="280" height="280">
+      <circle cx="140" cy="140" r="115" stroke="#ffffff30" stroke-width="10" fill="none" />
+      <circle class="ring" cx="140" cy="140" r="115" stroke="#ffffff" stroke-width="10" fill="none"
+        stroke-dasharray="722" stroke-dashoffset="0" stroke-linecap="round"/>
+    </svg>
+    <div class="time-display">
+      <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="start" title="ابدأ">&#9658;</button>
+    <button id="pause" title="إيقاف مؤقت">&#10073;&#10073;</button>
+    <button id="reset" title="إعادة ضبط">&#8635;</button>
+  </div>
+
+  <div class="inputs">
+    <input type="number" id="input-hours" min="0" value="00" />
+    <label>ساعة</label>
+    <input type="number" id="input-minutes" min="0" max="59" value="00" />
+    <label>دقيقة</label>
+    <input type="number" id="input-seconds" min="0" max="59" value="00" />
+    <label>ثانية</label>
+  </div>
+
+  <p class="footer">Made by Haya</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
